@@ -1,0 +1,8 @@
+{
+  "name": "cinexpert/protobuf-messages",
+  "type": "project",
+  "require": {
+    "php": "^7.1",
+    "google/protobuf": "^3.8"
+  }
+}

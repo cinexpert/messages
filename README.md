@@ -1,3 +1,3 @@
 # protobuf-messages
 
-Contains Google protobuf messages used across multiple projects
+Contains Google protocol buffer messages used across multiple projects
