@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+package Cinexpert.Messages;
+
 message HighPriorityContentUpdateRequest {
     enum ContentType {
         SCHEDULE = 0;
         SPL      = 1;
     }
 
-    ContentType type = 1;
-    string id        = 2;
+    string type = 1;
+    string id   = 2;
 }
