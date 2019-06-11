@@ -4,5 +4,12 @@
   "require": {
     "php": "^7.1",
     "google/protobuf": "^3.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cinexpert\\Tools\\": "src/Tools",
+      "Cinexpert\\Messages\\": "generated/Cinexpert/Messages",
+      "GPBMetadata\\": "generated/GPBMetadata"
+    }
   }
 }
