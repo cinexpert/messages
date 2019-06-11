@@ -18,9 +18,9 @@ class HighPriorityContentUpdateRequest extends \Google\Protobuf\Internal\Message
      */
     private $type = '';
     /**
-     * Generated from protobuf field <code>string id = 2;</code>
+     * Generated from protobuf field <code>string playerId = 2;</code>
      */
-    private $id = '';
+    private $playerId = '';
 
     /**
      * Constructor.
@@ -29,7 +29,7 @@ class HighPriorityContentUpdateRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $type
-     *     @type string $id
+     *     @type string $playerId
      * }
      */
     public function __construct($data = NULL) {
@@ -60,23 +60,23 @@ class HighPriorityContentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string id = 2;</code>
+     * Generated from protobuf field <code>string playerId = 2;</code>
      * @return string
      */
-    public function getId()
+    public function getPlayerId()
     {
-        return $this->id;
+        return $this->playerId;
     }
 
     /**
-     * Generated from protobuf field <code>string id = 2;</code>
+     * Generated from protobuf field <code>string playerId = 2;</code>
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setPlayerId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->id = $var;
+        $this->playerId = $var;
 
         return $this;
     }
