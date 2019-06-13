@@ -19,10 +19,20 @@ class ContentType
      * Generated from protobuf enum <code>SPL = 1;</code>
      */
     const SPL = 1;
+    /**
+     * Generated from protobuf enum <code>CPL = 2;</code>
+     */
+    const CPL = 2;
+    /**
+     * Generated from protobuf enum <code>KDM = 3;</code>
+     */
+    const KDM = 3;
 
     private static $valueToName = [
         self::SCHEDULE => 'SCHEDULE',
         self::SPL => 'SPL',
+        self::CPL => 'CPL',
+        self::KDM => 'KDM',
     ];
 
     public static function name($value)

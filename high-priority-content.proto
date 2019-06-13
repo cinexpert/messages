@@ -6,6 +6,8 @@ message HighPriorityContentUpdateRequest {
     enum ContentType {
         SCHEDULE = 0;
         SPL      = 1;
+        CPL      = 2;
+        KDM      = 3;
     }
 
     string type     = 1;
