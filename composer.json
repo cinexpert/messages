@@ -1,5 +1,5 @@
 {
-  "name": "cinexpert/protobuf-messages",
+  "name": "cinexpert/messages",
   "type": "library",
   "require": {
     "php": "^7.1",
