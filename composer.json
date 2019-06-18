@@ -9,6 +9,7 @@
     "psr-4": {
       "Cinexpert\\Tools\\": "src/Tools",
       "Cinexpert\\Messages\\": "generated/Cinexpert/Messages",
+      "Cinexpert\\Constants\\": "Constants",
       "GPBMetadata\\": "generated/GPBMetadata"
     }
   }
