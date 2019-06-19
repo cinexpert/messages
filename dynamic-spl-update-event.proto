@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Cinexpert.Messages;
+
+message DynamicSplUpdateEvent {
+    enum EventType {
+        POS_SCHEDULE_CREATION = 0;
+        POS_SCHEDULE_UPDATE   = 1;
+        LINK_CPL_POS_MOVIE    = 2;
+        UNLINK_CPL_POS_MOVIE  = 3;
+        CPL_RULE_CREATION     = 4;
+        CPL_RULE_UPDATE       = 5;
+    }
+
+    EventType eventType         = 1;
+    string posScheduleId        = 2;
+    string posScheduleStartTime = 3;
+    string posMovieId           = 4;
+    string posMovieTitle        = 5;
+    string cplId                = 6;
+}
