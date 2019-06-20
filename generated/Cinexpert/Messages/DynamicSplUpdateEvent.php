@@ -37,6 +37,10 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string cplId = 6;</code>
      */
     private $cplId = '';
+    /**
+     * Generated from protobuf field <code>string cplRuleId = 7;</code>
+     */
+    private $cplRuleId = '';
 
     /**
      * Constructor.
@@ -50,6 +54,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      *     @type string $posMovieId
      *     @type string $posMovieTitle
      *     @type string $cplId
+     *     @type string $cplRuleId
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +190,28 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->cplId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cplRuleId = 7;</code>
+     * @return string
+     */
+    public function getCplRuleId()
+    {
+        return $this->cplRuleId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cplRuleId = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCplRuleId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cplRuleId = $var;
 
         return $this;
     }

@@ -19,4 +19,5 @@ message DynamicSplUpdateEvent {
     string posMovieId           = 4;
     string posMovieTitle        = 5;
     string cplId                = 6;
+    string cplRuleId            = 7;
 }
