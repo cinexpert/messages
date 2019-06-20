@@ -41,6 +41,14 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string cplRuleId = 7;</code>
      */
     private $cplRuleId = '';
+    /**
+     * Generated from protobuf field <code>string cinemaId = 8;</code>
+     */
+    private $cinemaId = '';
+    /**
+     * Generated from protobuf field <code>string roomId = 9;</code>
+     */
+    private $roomId = '';
 
     /**
      * Constructor.
@@ -55,6 +63,8 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      *     @type string $posMovieTitle
      *     @type string $cplId
      *     @type string $cplRuleId
+     *     @type string $cinemaId
+     *     @type string $roomId
      * }
      */
     public function __construct($data = NULL) {
@@ -212,6 +222,50 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->cplRuleId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaId = 8;</code>
+     * @return string
+     */
+    public function getCinemaId()
+    {
+        return $this->cinemaId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaId = 8;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCinemaId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cinemaId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string roomId = 9;</code>
+     * @return string
+     */
+    public function getRoomId()
+    {
+        return $this->roomId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string roomId = 9;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRoomId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->roomId = $var;
 
         return $this;
     }

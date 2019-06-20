@@ -20,4 +20,6 @@ message DynamicSplUpdateEvent {
     string posMovieTitle        = 5;
     string cplId                = 6;
     string cplRuleId            = 7;
+    string cinemaId             = 8;
+    string roomId               = 9;
 }
