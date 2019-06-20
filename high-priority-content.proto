@@ -4,12 +4,13 @@ package Cinexpert.Messages;
 
 message HighPriorityContentUpdateRequest {
     enum ContentType {
-        SCHEDULE = 0;
-        SPL      = 1;
-        CPL      = 2;
-        KDM      = 3;
+        UNDEFINED = 0;
+        SCHEDULE  = 1;
+        SPL       = 2;
+        CPL       = 3;
+        KDM       = 4;
     }
 
-    string type     = 1;
-    string playerId = 2;
+    ContentType type = 1;
+    string playerId  = 2;
 }

@@ -12,23 +12,28 @@ use UnexpectedValueException;
 class ContentType
 {
     /**
-     * Generated from protobuf enum <code>SCHEDULE = 0;</code>
+     * Generated from protobuf enum <code>UNDEFINED = 0;</code>
      */
-    const SCHEDULE = 0;
+    const UNDEFINED = 0;
     /**
-     * Generated from protobuf enum <code>SPL = 1;</code>
+     * Generated from protobuf enum <code>SCHEDULE = 1;</code>
      */
-    const SPL = 1;
+    const SCHEDULE = 1;
     /**
-     * Generated from protobuf enum <code>CPL = 2;</code>
+     * Generated from protobuf enum <code>SPL = 2;</code>
      */
-    const CPL = 2;
+    const SPL = 2;
     /**
-     * Generated from protobuf enum <code>KDM = 3;</code>
+     * Generated from protobuf enum <code>CPL = 3;</code>
      */
-    const KDM = 3;
+    const CPL = 3;
+    /**
+     * Generated from protobuf enum <code>KDM = 4;</code>
+     */
+    const KDM = 4;
 
     private static $valueToName = [
+        self::UNDEFINED => 'UNDEFINED',
         self::SCHEDULE => 'SCHEDULE',
         self::SPL => 'SPL',
         self::CPL => 'CPL',

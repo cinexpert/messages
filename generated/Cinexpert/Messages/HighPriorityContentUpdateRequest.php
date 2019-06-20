@@ -14,9 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class HighPriorityContentUpdateRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string type = 1;</code>
+     * Generated from protobuf field <code>.Cinexpert.Messages.HighPriorityContentUpdateRequest.ContentType type = 1;</code>
      */
-    private $type = '';
+    private $type = 0;
     /**
      * Generated from protobuf field <code>string playerId = 2;</code>
      */
@@ -28,7 +28,7 @@ class HighPriorityContentUpdateRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $type
+     *     @type int $type
      *     @type string $playerId
      * }
      */
@@ -38,8 +38,8 @@ class HighPriorityContentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string type = 1;</code>
-     * @return string
+     * Generated from protobuf field <code>.Cinexpert.Messages.HighPriorityContentUpdateRequest.ContentType type = 1;</code>
+     * @return int
      */
     public function getType()
     {
@@ -47,13 +47,13 @@ class HighPriorityContentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string type = 1;</code>
-     * @param string $var
+     * Generated from protobuf field <code>.Cinexpert.Messages.HighPriorityContentUpdateRequest.ContentType type = 1;</code>
+     * @param int $var
      * @return $this
      */
     public function setType($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkEnum($var, \Cinexpert\Messages\HighPriorityContentUpdateRequest_ContentType::class);
         $this->type = $var;
 
         return $this;

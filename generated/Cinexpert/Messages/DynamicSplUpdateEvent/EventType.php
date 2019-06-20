@@ -12,31 +12,36 @@ use UnexpectedValueException;
 class EventType
 {
     /**
-     * Generated from protobuf enum <code>POS_SCHEDULE_CREATION = 0;</code>
+     * Generated from protobuf enum <code>UNDEFINED = 0;</code>
      */
-    const POS_SCHEDULE_CREATION = 0;
+    const UNDEFINED = 0;
     /**
-     * Generated from protobuf enum <code>POS_SCHEDULE_UPDATE = 1;</code>
+     * Generated from protobuf enum <code>POS_SCHEDULE_CREATION = 1;</code>
      */
-    const POS_SCHEDULE_UPDATE = 1;
+    const POS_SCHEDULE_CREATION = 1;
     /**
-     * Generated from protobuf enum <code>LINK_CPL_POS_MOVIE = 2;</code>
+     * Generated from protobuf enum <code>POS_SCHEDULE_UPDATE = 2;</code>
      */
-    const LINK_CPL_POS_MOVIE = 2;
+    const POS_SCHEDULE_UPDATE = 2;
     /**
-     * Generated from protobuf enum <code>UNLINK_CPL_POS_MOVIE = 3;</code>
+     * Generated from protobuf enum <code>LINK_CPL_POS_MOVIE = 3;</code>
      */
-    const UNLINK_CPL_POS_MOVIE = 3;
+    const LINK_CPL_POS_MOVIE = 3;
     /**
-     * Generated from protobuf enum <code>CPL_RULE_CREATION = 4;</code>
+     * Generated from protobuf enum <code>UNLINK_CPL_POS_MOVIE = 4;</code>
      */
-    const CPL_RULE_CREATION = 4;
+    const UNLINK_CPL_POS_MOVIE = 4;
     /**
-     * Generated from protobuf enum <code>CPL_RULE_UPDATE = 5;</code>
+     * Generated from protobuf enum <code>CPL_RULE_CREATION = 5;</code>
      */
-    const CPL_RULE_UPDATE = 5;
+    const CPL_RULE_CREATION = 5;
+    /**
+     * Generated from protobuf enum <code>CPL_RULE_UPDATE = 6;</code>
+     */
+    const CPL_RULE_UPDATE = 6;
 
     private static $valueToName = [
+        self::UNDEFINED => 'UNDEFINED',
         self::POS_SCHEDULE_CREATION => 'POS_SCHEDULE_CREATION',
         self::POS_SCHEDULE_UPDATE => 'POS_SCHEDULE_UPDATE',
         self::LINK_CPL_POS_MOVIE => 'LINK_CPL_POS_MOVIE',
