@@ -21,7 +21,9 @@ message DynamicSplUpdateEvent {
     string cplId                = 6;
     string cplContentTag        = 7;
     string cplTitle             = 8;
-    string cplRuleId            = 9;
-    string cinemaId             = 10;
-    string roomId               = 11;
+    string cplDuration          = 9;
+    string cplEditRate          = 10;
+    string cplRuleId            = 11;
+    string cinemaId             = 12;
+    string roomId               = 13;
 }
