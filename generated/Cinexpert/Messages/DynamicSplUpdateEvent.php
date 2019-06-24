@@ -38,15 +38,19 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      */
     private $cplId = '';
     /**
-     * Generated from protobuf field <code>string cplRuleId = 7;</code>
+     * Generated from protobuf field <code>string cplContentTag = 7;</code>
+     */
+    private $cplContentTag = '';
+    /**
+     * Generated from protobuf field <code>string cplRuleId = 8;</code>
      */
     private $cplRuleId = '';
     /**
-     * Generated from protobuf field <code>string cinemaId = 8;</code>
+     * Generated from protobuf field <code>string cinemaId = 9;</code>
      */
     private $cinemaId = '';
     /**
-     * Generated from protobuf field <code>string roomId = 9;</code>
+     * Generated from protobuf field <code>string roomId = 10;</code>
      */
     private $roomId = '';
 
@@ -62,6 +66,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      *     @type string $posMovieId
      *     @type string $posMovieTitle
      *     @type string $cplId
+     *     @type string $cplContentTag
      *     @type string $cplRuleId
      *     @type string $cinemaId
      *     @type string $roomId
@@ -205,7 +210,29 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cplRuleId = 7;</code>
+     * Generated from protobuf field <code>string cplContentTag = 7;</code>
+     * @return string
+     */
+    public function getCplContentTag()
+    {
+        return $this->cplContentTag;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cplContentTag = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCplContentTag($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cplContentTag = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cplRuleId = 8;</code>
      * @return string
      */
     public function getCplRuleId()
@@ -214,7 +241,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cplRuleId = 7;</code>
+     * Generated from protobuf field <code>string cplRuleId = 8;</code>
      * @param string $var
      * @return $this
      */
@@ -227,7 +254,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cinemaId = 8;</code>
+     * Generated from protobuf field <code>string cinemaId = 9;</code>
      * @return string
      */
     public function getCinemaId()
@@ -236,7 +263,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cinemaId = 8;</code>
+     * Generated from protobuf field <code>string cinemaId = 9;</code>
      * @param string $var
      * @return $this
      */
@@ -249,7 +276,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string roomId = 9;</code>
+     * Generated from protobuf field <code>string roomId = 10;</code>
      * @return string
      */
     public function getRoomId()
@@ -258,7 +285,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string roomId = 9;</code>
+     * Generated from protobuf field <code>string roomId = 10;</code>
      * @param string $var
      * @return $this
      */
