@@ -38,31 +38,27 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      */
     private $cplId = '';
     /**
-     * Generated from protobuf field <code>string cplContentTag = 7;</code>
-     */
-    private $cplContentTag = '';
-    /**
-     * Generated from protobuf field <code>string cplTitle = 8;</code>
+     * Generated from protobuf field <code>string cplTitle = 7;</code>
      */
     private $cplTitle = '';
     /**
-     * Generated from protobuf field <code>string cplDuration = 9;</code>
+     * Generated from protobuf field <code>string cplDuration = 8;</code>
      */
     private $cplDuration = '';
     /**
-     * Generated from protobuf field <code>string cplEditRate = 10;</code>
+     * Generated from protobuf field <code>string cplEditRate = 9;</code>
      */
     private $cplEditRate = '';
     /**
-     * Generated from protobuf field <code>string cplRuleId = 11;</code>
+     * Generated from protobuf field <code>string cplRuleId = 10;</code>
      */
     private $cplRuleId = '';
     /**
-     * Generated from protobuf field <code>string cinemaId = 12;</code>
+     * Generated from protobuf field <code>string cinemaId = 11;</code>
      */
     private $cinemaId = '';
     /**
-     * Generated from protobuf field <code>string roomId = 13;</code>
+     * Generated from protobuf field <code>string roomId = 12;</code>
      */
     private $roomId = '';
 
@@ -78,7 +74,6 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      *     @type string $posMovieId
      *     @type string $posMovieTitle
      *     @type string $cplId
-     *     @type string $cplContentTag
      *     @type string $cplTitle
      *     @type string $cplDuration
      *     @type string $cplEditRate
@@ -225,29 +220,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cplContentTag = 7;</code>
-     * @return string
-     */
-    public function getCplContentTag()
-    {
-        return $this->cplContentTag;
-    }
-
-    /**
-     * Generated from protobuf field <code>string cplContentTag = 7;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setCplContentTag($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->cplContentTag = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string cplTitle = 8;</code>
+     * Generated from protobuf field <code>string cplTitle = 7;</code>
      * @return string
      */
     public function getCplTitle()
@@ -256,7 +229,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cplTitle = 8;</code>
+     * Generated from protobuf field <code>string cplTitle = 7;</code>
      * @param string $var
      * @return $this
      */
@@ -269,7 +242,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cplDuration = 9;</code>
+     * Generated from protobuf field <code>string cplDuration = 8;</code>
      * @return string
      */
     public function getCplDuration()
@@ -278,7 +251,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cplDuration = 9;</code>
+     * Generated from protobuf field <code>string cplDuration = 8;</code>
      * @param string $var
      * @return $this
      */
@@ -291,7 +264,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cplEditRate = 10;</code>
+     * Generated from protobuf field <code>string cplEditRate = 9;</code>
      * @return string
      */
     public function getCplEditRate()
@@ -300,7 +273,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cplEditRate = 10;</code>
+     * Generated from protobuf field <code>string cplEditRate = 9;</code>
      * @param string $var
      * @return $this
      */
@@ -313,7 +286,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cplRuleId = 11;</code>
+     * Generated from protobuf field <code>string cplRuleId = 10;</code>
      * @return string
      */
     public function getCplRuleId()
@@ -322,7 +295,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cplRuleId = 11;</code>
+     * Generated from protobuf field <code>string cplRuleId = 10;</code>
      * @param string $var
      * @return $this
      */
@@ -335,7 +308,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cinemaId = 12;</code>
+     * Generated from protobuf field <code>string cinemaId = 11;</code>
      * @return string
      */
     public function getCinemaId()
@@ -344,7 +317,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cinemaId = 12;</code>
+     * Generated from protobuf field <code>string cinemaId = 11;</code>
      * @param string $var
      * @return $this
      */
@@ -357,7 +330,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string roomId = 13;</code>
+     * Generated from protobuf field <code>string roomId = 12;</code>
      * @return string
      */
     public function getRoomId()
@@ -366,7 +339,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string roomId = 13;</code>
+     * Generated from protobuf field <code>string roomId = 12;</code>
      * @param string $var
      * @return $this
      */

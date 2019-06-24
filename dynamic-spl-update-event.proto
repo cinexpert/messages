@@ -19,11 +19,10 @@ message DynamicSplUpdateEvent {
     string posMovieId           = 4;
     string posMovieTitle        = 5;
     string cplId                = 6;
-    string cplContentTag        = 7;
-    string cplTitle             = 8;
-    string cplDuration          = 9;
-    string cplEditRate          = 10;
-    string cplRuleId            = 11;
-    string cinemaId             = 12;
-    string roomId               = 13;
+    string cplTitle             = 7;
+    string cplDuration          = 8;
+    string cplEditRate          = 9;
+    string cplRuleId            = 10;
+    string cinemaId             = 11;
+    string roomId               = 12;
 }
