@@ -24,26 +24,31 @@ class EventType
      */
     const POS_SCHEDULE_UPDATE = 2;
     /**
-     * Generated from protobuf enum <code>LINK_CPL_POS_MOVIE = 3;</code>
+     * Generated from protobuf enum <code>POS_SCHEDULE_DELETION = 3;</code>
      */
-    const LINK_CPL_POS_MOVIE = 3;
+    const POS_SCHEDULE_DELETION = 3;
     /**
-     * Generated from protobuf enum <code>UNLINK_CPL_POS_MOVIE = 4;</code>
+     * Generated from protobuf enum <code>LINK_CPL_POS_MOVIE = 4;</code>
      */
-    const UNLINK_CPL_POS_MOVIE = 4;
+    const LINK_CPL_POS_MOVIE = 4;
     /**
-     * Generated from protobuf enum <code>CPL_RULE_CREATION = 5;</code>
+     * Generated from protobuf enum <code>UNLINK_CPL_POS_MOVIE = 5;</code>
      */
-    const CPL_RULE_CREATION = 5;
+    const UNLINK_CPL_POS_MOVIE = 5;
     /**
-     * Generated from protobuf enum <code>CPL_RULE_UPDATE = 6;</code>
+     * Generated from protobuf enum <code>CPL_RULE_CREATION = 6;</code>
      */
-    const CPL_RULE_UPDATE = 6;
+    const CPL_RULE_CREATION = 6;
+    /**
+     * Generated from protobuf enum <code>CPL_RULE_UPDATE = 7;</code>
+     */
+    const CPL_RULE_UPDATE = 7;
 
     private static $valueToName = [
         self::UNDEFINED => 'UNDEFINED',
         self::POS_SCHEDULE_CREATION => 'POS_SCHEDULE_CREATION',
         self::POS_SCHEDULE_UPDATE => 'POS_SCHEDULE_UPDATE',
+        self::POS_SCHEDULE_DELETION => 'POS_SCHEDULE_DELETION',
         self::LINK_CPL_POS_MOVIE => 'LINK_CPL_POS_MOVIE',
         self::UNLINK_CPL_POS_MOVIE => 'UNLINK_CPL_POS_MOVIE',
         self::CPL_RULE_CREATION => 'CPL_RULE_CREATION',

@@ -7,10 +7,11 @@ message DynamicSplUpdateEvent {
         UNDEFINED             = 0;
         POS_SCHEDULE_CREATION = 1;
         POS_SCHEDULE_UPDATE   = 2;
-        LINK_CPL_POS_MOVIE    = 3;
-        UNLINK_CPL_POS_MOVIE  = 4;
-        CPL_RULE_CREATION     = 5;
-        CPL_RULE_UPDATE       = 6;
+        POS_SCHEDULE_DELETION = 3;
+        LINK_CPL_POS_MOVIE    = 4;
+        UNLINK_CPL_POS_MOVIE  = 5;
+        CPL_RULE_CREATION     = 6;
+        CPL_RULE_UPDATE       = 7;
     }
 
     EventType eventType         = 1;
