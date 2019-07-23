@@ -43,6 +43,14 @@ class EventType
      * Generated from protobuf enum <code>CPL_RULE_UPDATE = 7;</code>
      */
     const CPL_RULE_UPDATE = 7;
+    /**
+     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_CREATION = 8;</code>
+     */
+    const SPL_PACK_INSTANCE_DRAFT_CREATION = 8;
+    /**
+     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_UPDATE = 9;</code>
+     */
+    const SPL_PACK_INSTANCE_DRAFT_UPDATE = 9;
 
     private static $valueToName = [
         self::UNDEFINED => 'UNDEFINED',
@@ -53,6 +61,8 @@ class EventType
         self::UNLINK_CPL_POS_MOVIE => 'UNLINK_CPL_POS_MOVIE',
         self::CPL_RULE_CREATION => 'CPL_RULE_CREATION',
         self::CPL_RULE_UPDATE => 'CPL_RULE_UPDATE',
+        self::SPL_PACK_INSTANCE_DRAFT_CREATION => 'SPL_PACK_INSTANCE_DRAFT_CREATION',
+        self::SPL_PACK_INSTANCE_DRAFT_UPDATE => 'SPL_PACK_INSTANCE_DRAFT_UPDATE',
     ];
 
     public static function name($value)

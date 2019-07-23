@@ -4,14 +4,16 @@ package Cinexpert.Messages;
 
 message DynamicSplUpdateEvent {
     enum EventType {
-        UNDEFINED             = 0;
-        POS_SCHEDULE_CREATION = 1;
-        POS_SCHEDULE_UPDATE   = 2;
-        POS_SCHEDULE_DELETION = 3;
-        LINK_CPL_POS_MOVIE    = 4;
-        UNLINK_CPL_POS_MOVIE  = 5;
-        CPL_RULE_CREATION     = 6;
-        CPL_RULE_UPDATE       = 7;
+        UNDEFINED                        = 0;
+        POS_SCHEDULE_CREATION            = 1;
+        POS_SCHEDULE_UPDATE              = 2;
+        POS_SCHEDULE_DELETION            = 3;
+        LINK_CPL_POS_MOVIE               = 4;
+        UNLINK_CPL_POS_MOVIE             = 5;
+        CPL_RULE_CREATION                = 6;
+        CPL_RULE_UPDATE                  = 7;
+        SPL_PACK_INSTANCE_DRAFT_CREATION = 8;
+        SPL_PACK_INSTANCE_DRAFT_UPDATE   = 9;
     }
 
     EventType eventType         = 1;
