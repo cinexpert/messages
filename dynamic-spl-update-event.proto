@@ -16,16 +16,17 @@ message DynamicSplUpdateEvent {
         SPL_PACK_INSTANCE_DRAFT_UPDATE   = 9;
     }
 
-    EventType eventType         = 1;
-    string posScheduleId        = 2;
-    string posScheduleStartTime = 3;
-    string posMovieId           = 4;
-    string posMovieTitle        = 5;
-    string cplId                = 6;
-    string cplTitle             = 7;
-    string cplDuration          = 8;
-    string cplEditRate          = 9;
-    string cplRuleId            = 10;
-    string cinemaId             = 11;
-    string roomId               = 12;
+    EventType eventType           = 1;
+    string posScheduleId          = 2;
+    string posScheduleStartTime   = 3;
+    string posMovieId             = 4;
+    string posMovieTitle          = 5;
+    string cplId                  = 6;
+    string cplTitle               = 7;
+    string cplDuration            = 8;
+    string cplEditRate            = 9;
+    string cplRuleId              = 10;
+    string cinemaId               = 11;
+    string roomId                 = 12;
+    string splPackInstanceDraftId = 13;
 }

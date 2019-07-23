@@ -61,6 +61,10 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string roomId = 12;</code>
      */
     private $roomId = '';
+    /**
+     * Generated from protobuf field <code>string splPackInstanceDraftId = 13;</code>
+     */
+    private $splPackInstanceDraftId = '';
 
     /**
      * Constructor.
@@ -80,6 +84,7 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      *     @type string $cplRuleId
      *     @type string $cinemaId
      *     @type string $roomId
+     *     @type string $splPackInstanceDraftId
      * }
      */
     public function __construct($data = NULL) {
@@ -347,6 +352,28 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->roomId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string splPackInstanceDraftId = 13;</code>
+     * @return string
+     */
+    public function getSplPackInstanceDraftId()
+    {
+        return $this->splPackInstanceDraftId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string splPackInstanceDraftId = 13;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setSplPackInstanceDraftId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->splPackInstanceDraftId = $var;
 
         return $this;
     }
