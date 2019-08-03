@@ -8,13 +8,15 @@ message DynamicSplUpdateEvent {
         POS_SCHEDULE_CREATION            = 1;
         POS_SCHEDULE_UPDATE              = 2;
         POS_SCHEDULE_DELETION            = 3;
-        LINK_CPL_POS_MOVIE               = 4;
-        UNLINK_CPL_POS_MOVIE             = 5;
-        CPL_RULE_CREATION                = 6;
-        CPL_RULE_UPDATE                  = 7;
-        SPL_PACK_INSTANCE_DRAFT_CREATION = 8;
-        SPL_PACK_INSTANCE_DRAFT_UPDATE   = 9;
-        SPL_PACK_INSTANCE_DRAFT_DELETION = 10;
+        LINK_CPL_POS_MOVIE_CREATION      = 4;
+        LINK_CPL_POS_MOVIE_UPDATE        = 5;
+        LINK_CPL_POS_MOVIE_DELETION      = 6;
+        UNLINK_CPL_POS_MOVIE             = 7;
+        CPL_RULE_CREATION                = 8;
+        CPL_RULE_UPDATE                  = 9;
+        SPL_PACK_INSTANCE_DRAFT_CREATION = 10;
+        SPL_PACK_INSTANCE_DRAFT_UPDATE   = 11;
+        SPL_PACK_INSTANCE_DRAFT_DELETION = 12;
     }
 
     EventType eventType           = 1;

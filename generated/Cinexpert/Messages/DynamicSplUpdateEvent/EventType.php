@@ -28,40 +28,50 @@ class EventType
      */
     const POS_SCHEDULE_DELETION = 3;
     /**
-     * Generated from protobuf enum <code>LINK_CPL_POS_MOVIE = 4;</code>
+     * Generated from protobuf enum <code>LINK_CPL_POS_MOVIE_CREATION = 4;</code>
      */
-    const LINK_CPL_POS_MOVIE = 4;
+    const LINK_CPL_POS_MOVIE_CREATION = 4;
     /**
-     * Generated from protobuf enum <code>UNLINK_CPL_POS_MOVIE = 5;</code>
+     * Generated from protobuf enum <code>LINK_CPL_POS_MOVIE_UPDATE = 5;</code>
      */
-    const UNLINK_CPL_POS_MOVIE = 5;
+    const LINK_CPL_POS_MOVIE_UPDATE = 5;
     /**
-     * Generated from protobuf enum <code>CPL_RULE_CREATION = 6;</code>
+     * Generated from protobuf enum <code>LINK_CPL_POS_MOVIE_DELETION = 6;</code>
      */
-    const CPL_RULE_CREATION = 6;
+    const LINK_CPL_POS_MOVIE_DELETION = 6;
     /**
-     * Generated from protobuf enum <code>CPL_RULE_UPDATE = 7;</code>
+     * Generated from protobuf enum <code>UNLINK_CPL_POS_MOVIE = 7;</code>
      */
-    const CPL_RULE_UPDATE = 7;
+    const UNLINK_CPL_POS_MOVIE = 7;
     /**
-     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_CREATION = 8;</code>
+     * Generated from protobuf enum <code>CPL_RULE_CREATION = 8;</code>
      */
-    const SPL_PACK_INSTANCE_DRAFT_CREATION = 8;
+    const CPL_RULE_CREATION = 8;
     /**
-     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_UPDATE = 9;</code>
+     * Generated from protobuf enum <code>CPL_RULE_UPDATE = 9;</code>
      */
-    const SPL_PACK_INSTANCE_DRAFT_UPDATE = 9;
+    const CPL_RULE_UPDATE = 9;
     /**
-     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_DELETION = 10;</code>
+     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_CREATION = 10;</code>
      */
-    const SPL_PACK_INSTANCE_DRAFT_DELETION = 10;
+    const SPL_PACK_INSTANCE_DRAFT_CREATION = 10;
+    /**
+     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_UPDATE = 11;</code>
+     */
+    const SPL_PACK_INSTANCE_DRAFT_UPDATE = 11;
+    /**
+     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_DELETION = 12;</code>
+     */
+    const SPL_PACK_INSTANCE_DRAFT_DELETION = 12;
 
     private static $valueToName = [
         self::UNDEFINED => 'UNDEFINED',
         self::POS_SCHEDULE_CREATION => 'POS_SCHEDULE_CREATION',
         self::POS_SCHEDULE_UPDATE => 'POS_SCHEDULE_UPDATE',
         self::POS_SCHEDULE_DELETION => 'POS_SCHEDULE_DELETION',
-        self::LINK_CPL_POS_MOVIE => 'LINK_CPL_POS_MOVIE',
+        self::LINK_CPL_POS_MOVIE_CREATION => 'LINK_CPL_POS_MOVIE_CREATION',
+        self::LINK_CPL_POS_MOVIE_UPDATE => 'LINK_CPL_POS_MOVIE_UPDATE',
+        self::LINK_CPL_POS_MOVIE_DELETION => 'LINK_CPL_POS_MOVIE_DELETION',
         self::UNLINK_CPL_POS_MOVIE => 'UNLINK_CPL_POS_MOVIE',
         self::CPL_RULE_CREATION => 'CPL_RULE_CREATION',
         self::CPL_RULE_UPDATE => 'CPL_RULE_UPDATE',
