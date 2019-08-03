@@ -51,6 +51,10 @@ class EventType
      * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_UPDATE = 9;</code>
      */
     const SPL_PACK_INSTANCE_DRAFT_UPDATE = 9;
+    /**
+     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_DELETION = 10;</code>
+     */
+    const SPL_PACK_INSTANCE_DRAFT_DELETION = 10;
 
     private static $valueToName = [
         self::UNDEFINED => 'UNDEFINED',
@@ -63,6 +67,7 @@ class EventType
         self::CPL_RULE_UPDATE => 'CPL_RULE_UPDATE',
         self::SPL_PACK_INSTANCE_DRAFT_CREATION => 'SPL_PACK_INSTANCE_DRAFT_CREATION',
         self::SPL_PACK_INSTANCE_DRAFT_UPDATE => 'SPL_PACK_INSTANCE_DRAFT_UPDATE',
+        self::SPL_PACK_INSTANCE_DRAFT_DELETION => 'SPL_PACK_INSTANCE_DRAFT_DELETION',
     ];
 
     public static function name($value)
