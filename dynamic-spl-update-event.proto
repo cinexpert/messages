@@ -30,4 +30,5 @@ message DynamicSplUpdateEvent {
     string cinemaId               = 11;
     string roomId                 = 12;
     string splPackInstanceDraftId = 13;
+    string splId                  = 14;
 }
