@@ -52,17 +52,21 @@ class EventType
      */
     const CPL_RULE_UPDATE = 9;
     /**
-     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_CREATION = 10;</code>
+     * Generated from protobuf enum <code>CPL_RULE_DELETION = 10;</code>
      */
-    const SPL_PACK_INSTANCE_DRAFT_CREATION = 10;
+    const CPL_RULE_DELETION = 10;
     /**
-     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_UPDATE = 11;</code>
+     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_CREATION = 11;</code>
      */
-    const SPL_PACK_INSTANCE_DRAFT_UPDATE = 11;
+    const SPL_PACK_INSTANCE_DRAFT_CREATION = 11;
     /**
-     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_DELETION = 12;</code>
+     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_UPDATE = 12;</code>
      */
-    const SPL_PACK_INSTANCE_DRAFT_DELETION = 12;
+    const SPL_PACK_INSTANCE_DRAFT_UPDATE = 12;
+    /**
+     * Generated from protobuf enum <code>SPL_PACK_INSTANCE_DRAFT_DELETION = 13;</code>
+     */
+    const SPL_PACK_INSTANCE_DRAFT_DELETION = 13;
 
     private static $valueToName = [
         self::UNDEFINED => 'UNDEFINED',
@@ -75,6 +79,7 @@ class EventType
         self::UNLINK_CPL_POS_MOVIE => 'UNLINK_CPL_POS_MOVIE',
         self::CPL_RULE_CREATION => 'CPL_RULE_CREATION',
         self::CPL_RULE_UPDATE => 'CPL_RULE_UPDATE',
+        self::CPL_RULE_DELETION => 'CPL_RULE_DELETION',
         self::SPL_PACK_INSTANCE_DRAFT_CREATION => 'SPL_PACK_INSTANCE_DRAFT_CREATION',
         self::SPL_PACK_INSTANCE_DRAFT_UPDATE => 'SPL_PACK_INSTANCE_DRAFT_UPDATE',
         self::SPL_PACK_INSTANCE_DRAFT_DELETION => 'SPL_PACK_INSTANCE_DRAFT_DELETION',
