@@ -7,4 +7,5 @@ Contains Google protocol buffer messages used across multiple projects.
 ```
 ./protoc --php_out=generated high-priority-content.proto
 ./protoc --php_out=generated dynamic-spl-update-event.proto
+./protoc --php_out=generated equipment-update-request.proto
 ```

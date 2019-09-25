@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Cinexpert.Messages;
+
+message EquipmentUpdateRequest {
+    enum RequestType {
+        UNDEFINED = 0;
+        CREATE    = 1;
+        UPDATE    = 2;
+        DELETE    = 3;
+    }
+
+    RequestType requestType      = 1;
+    string id                    = 2;
+    string serial                = 3;
+    string equipmentModel        = 4;
+    string cinema                = 5;
+    string room                  = 6;
+    string ip                    = 7;
+    string certificateThumbprint = 8;
+}
