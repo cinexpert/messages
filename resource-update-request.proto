@@ -21,12 +21,20 @@ message ResourceUpdateRequest {
 
     ResourceType resourceType    = 1;
     RequestType requestType      = 2;
-    string id                    = 3;
-    string serial                = 4;
-    string equipmentModel        = 5;
-    string cinema                = 6;
-    string room                  = 7;
-    string ip                    = 8;
-    string certificateThumbprint = 9;
-    string name                  = 10;
+    string chainId               = 3;
+    string cinemaId              = 4;
+    string roomId                = 5;
+    string equipmentId           = 6;
+    string equipmentModelId      = 7;
+    string serial                = 8;
+    string ip                    = 12;
+    string certificateThumbprint = 13;
+    string name                  = 14;
+    string countryId             = 15;
+    string cityId                = 16;
+    string zipCode               = 17;
+    string regionId              = 18;
+    string cinemaStreetline1     = 19;
+    string cinemaStreetLine2     = 20;
+    string cinemaStreetNumber    = 21;
 }
