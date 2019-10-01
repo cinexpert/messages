@@ -7,32 +7,42 @@ namespace Cinexpert\Messages\EquipmentUpdateRequest;
 use UnexpectedValueException;
 
 /**
- * Protobuf type <code>Cinexpert.Messages.EquipmentUpdateRequest.RequestType</code>
+ * Protobuf type <code>Cinexpert.Messages.EquipmentUpdateRequest.ResourceType</code>
  */
-class RequestType
+class ResourceType
 {
     /**
-     * Generated from protobuf enum <code>NOT_SET = 0;</code>
+     * Generated from protobuf enum <code>UNDEFINED = 0;</code>
      */
-    const NOT_SET = 0;
+    const UNDEFINED = 0;
     /**
-     * Generated from protobuf enum <code>CREATE = 1;</code>
+     * Generated from protobuf enum <code>CHAIN = 1;</code>
      */
-    const CREATE = 1;
+    const CHAIN = 1;
     /**
-     * Generated from protobuf enum <code>UPDATE = 2;</code>
+     * Generated from protobuf enum <code>CINEMA = 2;</code>
      */
-    const UPDATE = 2;
+    const CINEMA = 2;
     /**
-     * Generated from protobuf enum <code>DELETE = 3;</code>
+     * Generated from protobuf enum <code>ROOM = 3;</code>
      */
-    const DELETE = 3;
+    const ROOM = 3;
+    /**
+     * Generated from protobuf enum <code>EQUIPMENT = 4;</code>
+     */
+    const EQUIPMENT = 4;
+    /**
+     * Generated from protobuf enum <code>EQUIPMENT_MODEL = 5;</code>
+     */
+    const EQUIPMENT_MODEL = 5;
 
     private static $valueToName = [
-        self::NOT_SET => 'NOT_SET',
-        self::CREATE => 'CREATE',
-        self::UPDATE => 'UPDATE',
-        self::DELETE => 'DELETE',
+        self::UNDEFINED => 'UNDEFINED',
+        self::CHAIN => 'CHAIN',
+        self::CINEMA => 'CINEMA',
+        self::ROOM => 'ROOM',
+        self::EQUIPMENT => 'EQUIPMENT',
+        self::EQUIPMENT_MODEL => 'EQUIPMENT_MODEL',
     ];
 
     public static function name($value)
@@ -57,5 +67,5 @@ class RequestType
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.
-class_alias(RequestType::class, \Cinexpert\Messages\EquipmentUpdateRequest_RequestType::class);
+class_alias(ResourceType::class, \Cinexpert\Messages\EquipmentUpdateRequest_ResourceType::class);
 

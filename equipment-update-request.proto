@@ -3,11 +3,20 @@ syntax = "proto3";
 package Cinexpert.Messages;
 
 message EquipmentUpdateRequest {
+    enum ResourceType {
+        UNDEFINED       = 0;
+        CHAIN           = 1;
+        CINEMA          = 2;
+        ROOM            = 3;
+        EQUIPMENT       = 4;
+        EQUIPMENT_MODEL = 5;
+    }
+
     enum RequestType {
-        UNDEFINED = 0;
-        CREATE    = 1;
-        UPDATE    = 2;
-        DELETE    = 3;
+        NOT_SET = 0;
+        CREATE  = 1;
+        UPDATE  = 2;
+        DELETE  = 3;
     }
 
     RequestType requestType      = 1;
