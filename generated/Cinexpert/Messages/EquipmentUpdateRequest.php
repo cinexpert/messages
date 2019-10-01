@@ -14,35 +14,39 @@ use Google\Protobuf\Internal\GPBUtil;
 class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.Cinexpert.Messages.EquipmentUpdateRequest.RequestType requestType = 1;</code>
+     * Generated from protobuf field <code>.Cinexpert.Messages.EquipmentUpdateRequest.ResourceType resourceType = 1;</code>
+     */
+    private $resourceType = 0;
+    /**
+     * Generated from protobuf field <code>.Cinexpert.Messages.EquipmentUpdateRequest.RequestType requestType = 2;</code>
      */
     private $requestType = 0;
     /**
-     * Generated from protobuf field <code>string id = 2;</code>
+     * Generated from protobuf field <code>string id = 3;</code>
      */
     private $id = '';
     /**
-     * Generated from protobuf field <code>string serial = 3;</code>
+     * Generated from protobuf field <code>string serial = 4;</code>
      */
     private $serial = '';
     /**
-     * Generated from protobuf field <code>string equipmentModel = 4;</code>
+     * Generated from protobuf field <code>string equipmentModel = 5;</code>
      */
     private $equipmentModel = '';
     /**
-     * Generated from protobuf field <code>string cinema = 5;</code>
+     * Generated from protobuf field <code>string cinema = 6;</code>
      */
     private $cinema = '';
     /**
-     * Generated from protobuf field <code>string room = 6;</code>
+     * Generated from protobuf field <code>string room = 7;</code>
      */
     private $room = '';
     /**
-     * Generated from protobuf field <code>string ip = 7;</code>
+     * Generated from protobuf field <code>string ip = 8;</code>
      */
     private $ip = '';
     /**
-     * Generated from protobuf field <code>string certificateThumbprint = 8;</code>
+     * Generated from protobuf field <code>string certificateThumbprint = 9;</code>
      */
     private $certificateThumbprint = '';
 
@@ -52,6 +56,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
+     *     @type int $resourceType
      *     @type int $requestType
      *     @type string $id
      *     @type string $serial
@@ -68,7 +73,29 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.Cinexpert.Messages.EquipmentUpdateRequest.RequestType requestType = 1;</code>
+     * Generated from protobuf field <code>.Cinexpert.Messages.EquipmentUpdateRequest.ResourceType resourceType = 1;</code>
+     * @return int
+     */
+    public function getResourceType()
+    {
+        return $this->resourceType;
+    }
+
+    /**
+     * Generated from protobuf field <code>.Cinexpert.Messages.EquipmentUpdateRequest.ResourceType resourceType = 1;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setResourceType($var)
+    {
+        GPBUtil::checkEnum($var, \Cinexpert\Messages\EquipmentUpdateRequest_ResourceType::class);
+        $this->resourceType = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.Cinexpert.Messages.EquipmentUpdateRequest.RequestType requestType = 2;</code>
      * @return int
      */
     public function getRequestType()
@@ -77,7 +104,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.Cinexpert.Messages.EquipmentUpdateRequest.RequestType requestType = 1;</code>
+     * Generated from protobuf field <code>.Cinexpert.Messages.EquipmentUpdateRequest.RequestType requestType = 2;</code>
      * @param int $var
      * @return $this
      */
@@ -90,7 +117,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string id = 2;</code>
+     * Generated from protobuf field <code>string id = 3;</code>
      * @return string
      */
     public function getId()
@@ -99,7 +126,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string id = 2;</code>
+     * Generated from protobuf field <code>string id = 3;</code>
      * @param string $var
      * @return $this
      */
@@ -112,7 +139,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string serial = 3;</code>
+     * Generated from protobuf field <code>string serial = 4;</code>
      * @return string
      */
     public function getSerial()
@@ -121,7 +148,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string serial = 3;</code>
+     * Generated from protobuf field <code>string serial = 4;</code>
      * @param string $var
      * @return $this
      */
@@ -134,7 +161,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string equipmentModel = 4;</code>
+     * Generated from protobuf field <code>string equipmentModel = 5;</code>
      * @return string
      */
     public function getEquipmentModel()
@@ -143,7 +170,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string equipmentModel = 4;</code>
+     * Generated from protobuf field <code>string equipmentModel = 5;</code>
      * @param string $var
      * @return $this
      */
@@ -156,7 +183,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cinema = 5;</code>
+     * Generated from protobuf field <code>string cinema = 6;</code>
      * @return string
      */
     public function getCinema()
@@ -165,7 +192,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cinema = 5;</code>
+     * Generated from protobuf field <code>string cinema = 6;</code>
      * @param string $var
      * @return $this
      */
@@ -178,7 +205,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room = 6;</code>
+     * Generated from protobuf field <code>string room = 7;</code>
      * @return string
      */
     public function getRoom()
@@ -187,7 +214,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string room = 6;</code>
+     * Generated from protobuf field <code>string room = 7;</code>
      * @param string $var
      * @return $this
      */
@@ -200,7 +227,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string ip = 7;</code>
+     * Generated from protobuf field <code>string ip = 8;</code>
      * @return string
      */
     public function getIp()
@@ -209,7 +236,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string ip = 7;</code>
+     * Generated from protobuf field <code>string ip = 8;</code>
      * @param string $var
      * @return $this
      */
@@ -222,7 +249,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string certificateThumbprint = 8;</code>
+     * Generated from protobuf field <code>string certificateThumbprint = 9;</code>
      * @return string
      */
     public function getCertificateThumbprint()
@@ -231,7 +258,7 @@ class EquipmentUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string certificateThumbprint = 8;</code>
+     * Generated from protobuf field <code>string certificateThumbprint = 9;</code>
      * @param string $var
      * @return $this
      */

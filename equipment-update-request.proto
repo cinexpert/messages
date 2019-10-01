@@ -19,12 +19,13 @@ message EquipmentUpdateRequest {
         DELETE  = 3;
     }
 
-    RequestType requestType      = 1;
-    string id                    = 2;
-    string serial                = 3;
-    string equipmentModel        = 4;
-    string cinema                = 5;
-    string room                  = 6;
-    string ip                    = 7;
-    string certificateThumbprint = 8;
+    ResourceType resourceType    = 1;
+    RequestType requestType      = 2;
+    string id                    = 3;
+    string serial                = 4;
+    string equipmentModel        = 5;
+    string cinema                = 6;
+    string room                  = 7;
+    string ip                    = 8;
+    string certificateThumbprint = 9;
 }
