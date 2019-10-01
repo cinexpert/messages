@@ -28,4 +28,5 @@ message ResourceUpdateRequest {
     string room                  = 7;
     string ip                    = 8;
     string certificateThumbprint = 9;
+    string name                  = 10;
 }
