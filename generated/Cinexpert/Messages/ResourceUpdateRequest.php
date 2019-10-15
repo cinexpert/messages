@@ -93,6 +93,10 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string cinemaNumber = 23;</code>
      */
     private $cinemaNumber = '';
+    /**
+     * Generated from protobuf field <code>string roomNumber = 24;</code>
+     */
+    private $roomNumber = '';
 
     /**
      * Constructor.
@@ -120,6 +124,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type string $cinemaStreetNumber
      *     @type string $cinemaTimezone
      *     @type string $cinemaNumber
+     *     @type string $roomNumber
      * }
      */
     public function __construct($data = NULL) {
@@ -563,6 +568,28 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->cinemaNumber = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string roomNumber = 24;</code>
+     * @return string
+     */
+    public function getRoomNumber()
+    {
+        return $this->roomNumber;
+    }
+
+    /**
+     * Generated from protobuf field <code>string roomNumber = 24;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRoomNumber($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->roomNumber = $var;
 
         return $this;
     }

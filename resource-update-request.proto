@@ -39,4 +39,5 @@ message ResourceUpdateRequest {
     string cinemaStreetNumber    = 21;
     string cinemaTimezone        = 22;
     string cinemaNumber          = 23;
+    string roomNumber            = 24;
 }
