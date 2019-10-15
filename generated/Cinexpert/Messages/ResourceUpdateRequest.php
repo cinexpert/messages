@@ -22,37 +22,69 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      */
     private $requestType = 0;
     /**
-     * Generated from protobuf field <code>string id = 3;</code>
+     * Generated from protobuf field <code>string chainId = 3;</code>
      */
-    private $id = '';
+    private $chainId = '';
     /**
-     * Generated from protobuf field <code>string serial = 4;</code>
+     * Generated from protobuf field <code>string cinemaId = 4;</code>
+     */
+    private $cinemaId = '';
+    /**
+     * Generated from protobuf field <code>string roomId = 5;</code>
+     */
+    private $roomId = '';
+    /**
+     * Generated from protobuf field <code>string equipmentId = 6;</code>
+     */
+    private $equipmentId = '';
+    /**
+     * Generated from protobuf field <code>string equipmentModelId = 7;</code>
+     */
+    private $equipmentModelId = '';
+    /**
+     * Generated from protobuf field <code>string serial = 8;</code>
      */
     private $serial = '';
     /**
-     * Generated from protobuf field <code>string equipmentModel = 5;</code>
-     */
-    private $equipmentModel = '';
-    /**
-     * Generated from protobuf field <code>string cinema = 6;</code>
-     */
-    private $cinema = '';
-    /**
-     * Generated from protobuf field <code>string room = 7;</code>
-     */
-    private $room = '';
-    /**
-     * Generated from protobuf field <code>string ip = 8;</code>
+     * Generated from protobuf field <code>string ip = 12;</code>
      */
     private $ip = '';
     /**
-     * Generated from protobuf field <code>string certificateThumbprint = 9;</code>
+     * Generated from protobuf field <code>string certificateThumbprint = 13;</code>
      */
     private $certificateThumbprint = '';
     /**
-     * Generated from protobuf field <code>string name = 10;</code>
+     * Generated from protobuf field <code>string name = 14;</code>
      */
     private $name = '';
+    /**
+     * Generated from protobuf field <code>string countryId = 15;</code>
+     */
+    private $countryId = '';
+    /**
+     * Generated from protobuf field <code>string cityId = 16;</code>
+     */
+    private $cityId = '';
+    /**
+     * Generated from protobuf field <code>string zipCode = 17;</code>
+     */
+    private $zipCode = '';
+    /**
+     * Generated from protobuf field <code>string regionId = 18;</code>
+     */
+    private $regionId = '';
+    /**
+     * Generated from protobuf field <code>string cinemaStreetline1 = 19;</code>
+     */
+    private $cinemaStreetline1 = '';
+    /**
+     * Generated from protobuf field <code>string cinemaStreetLine2 = 20;</code>
+     */
+    private $cinemaStreetLine2 = '';
+    /**
+     * Generated from protobuf field <code>string cinemaStreetNumber = 21;</code>
+     */
+    private $cinemaStreetNumber = '';
 
     /**
      * Constructor.
@@ -62,14 +94,22 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *
      *     @type int $resourceType
      *     @type int $requestType
-     *     @type string $id
+     *     @type string $chainId
+     *     @type string $cinemaId
+     *     @type string $roomId
+     *     @type string $equipmentId
+     *     @type string $equipmentModelId
      *     @type string $serial
-     *     @type string $equipmentModel
-     *     @type string $cinema
-     *     @type string $room
      *     @type string $ip
      *     @type string $certificateThumbprint
      *     @type string $name
+     *     @type string $countryId
+     *     @type string $cityId
+     *     @type string $zipCode
+     *     @type string $regionId
+     *     @type string $cinemaStreetline1
+     *     @type string $cinemaStreetLine2
+     *     @type string $cinemaStreetNumber
      * }
      */
     public function __construct($data = NULL) {
@@ -122,29 +162,117 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string id = 3;</code>
+     * Generated from protobuf field <code>string chainId = 3;</code>
      * @return string
      */
-    public function getId()
+    public function getChainId()
     {
-        return $this->id;
+        return $this->chainId;
     }
 
     /**
-     * Generated from protobuf field <code>string id = 3;</code>
+     * Generated from protobuf field <code>string chainId = 3;</code>
      * @param string $var
      * @return $this
      */
-    public function setId($var)
+    public function setChainId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->id = $var;
+        $this->chainId = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>string serial = 4;</code>
+     * Generated from protobuf field <code>string cinemaId = 4;</code>
+     * @return string
+     */
+    public function getCinemaId()
+    {
+        return $this->cinemaId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaId = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCinemaId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cinemaId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string roomId = 5;</code>
+     * @return string
+     */
+    public function getRoomId()
+    {
+        return $this->roomId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string roomId = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRoomId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->roomId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentId = 6;</code>
+     * @return string
+     */
+    public function getEquipmentId()
+    {
+        return $this->equipmentId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentId = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEquipmentId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->equipmentId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentModelId = 7;</code>
+     * @return string
+     */
+    public function getEquipmentModelId()
+    {
+        return $this->equipmentModelId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentModelId = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEquipmentModelId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->equipmentModelId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string serial = 8;</code>
      * @return string
      */
     public function getSerial()
@@ -153,7 +281,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string serial = 4;</code>
+     * Generated from protobuf field <code>string serial = 8;</code>
      * @param string $var
      * @return $this
      */
@@ -166,73 +294,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string equipmentModel = 5;</code>
-     * @return string
-     */
-    public function getEquipmentModel()
-    {
-        return $this->equipmentModel;
-    }
-
-    /**
-     * Generated from protobuf field <code>string equipmentModel = 5;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setEquipmentModel($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->equipmentModel = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string cinema = 6;</code>
-     * @return string
-     */
-    public function getCinema()
-    {
-        return $this->cinema;
-    }
-
-    /**
-     * Generated from protobuf field <code>string cinema = 6;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setCinema($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->cinema = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string room = 7;</code>
-     * @return string
-     */
-    public function getRoom()
-    {
-        return $this->room;
-    }
-
-    /**
-     * Generated from protobuf field <code>string room = 7;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setRoom($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->room = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string ip = 8;</code>
+     * Generated from protobuf field <code>string ip = 12;</code>
      * @return string
      */
     public function getIp()
@@ -241,7 +303,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string ip = 8;</code>
+     * Generated from protobuf field <code>string ip = 12;</code>
      * @param string $var
      * @return $this
      */
@@ -254,7 +316,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string certificateThumbprint = 9;</code>
+     * Generated from protobuf field <code>string certificateThumbprint = 13;</code>
      * @return string
      */
     public function getCertificateThumbprint()
@@ -263,7 +325,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string certificateThumbprint = 9;</code>
+     * Generated from protobuf field <code>string certificateThumbprint = 13;</code>
      * @param string $var
      * @return $this
      */
@@ -276,7 +338,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 10;</code>
+     * Generated from protobuf field <code>string name = 14;</code>
      * @return string
      */
     public function getName()
@@ -285,7 +347,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 10;</code>
+     * Generated from protobuf field <code>string name = 14;</code>
      * @param string $var
      * @return $this
      */
@@ -293,6 +355,160 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string countryId = 15;</code>
+     * @return string
+     */
+    public function getCountryId()
+    {
+        return $this->countryId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string countryId = 15;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCountryId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->countryId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cityId = 16;</code>
+     * @return string
+     */
+    public function getCityId()
+    {
+        return $this->cityId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cityId = 16;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCityId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cityId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string zipCode = 17;</code>
+     * @return string
+     */
+    public function getZipCode()
+    {
+        return $this->zipCode;
+    }
+
+    /**
+     * Generated from protobuf field <code>string zipCode = 17;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setZipCode($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->zipCode = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string regionId = 18;</code>
+     * @return string
+     */
+    public function getRegionId()
+    {
+        return $this->regionId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string regionId = 18;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRegionId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->regionId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaStreetline1 = 19;</code>
+     * @return string
+     */
+    public function getCinemaStreetline1()
+    {
+        return $this->cinemaStreetline1;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaStreetline1 = 19;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCinemaStreetline1($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cinemaStreetline1 = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaStreetLine2 = 20;</code>
+     * @return string
+     */
+    public function getCinemaStreetLine2()
+    {
+        return $this->cinemaStreetLine2;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaStreetLine2 = 20;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCinemaStreetLine2($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cinemaStreetLine2 = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaStreetNumber = 21;</code>
+     * @return string
+     */
+    public function getCinemaStreetNumber()
+    {
+        return $this->cinemaStreetNumber;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaStreetNumber = 21;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCinemaStreetNumber($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cinemaStreetNumber = $var;
 
         return $this;
     }
