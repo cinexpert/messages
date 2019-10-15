@@ -85,6 +85,10 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string cinemaStreetNumber = 21;</code>
      */
     private $cinemaStreetNumber = '';
+    /**
+     * Generated from protobuf field <code>string cinemaTimezone = 22;</code>
+     */
+    private $cinemaTimezone = '';
 
     /**
      * Constructor.
@@ -110,6 +114,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type string $cinemaStreetline1
      *     @type string $cinemaStreetLine2
      *     @type string $cinemaStreetNumber
+     *     @type string $cinemaTimezone
      * }
      */
     public function __construct($data = NULL) {
@@ -509,6 +514,28 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->cinemaStreetNumber = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaTimezone = 22;</code>
+     * @return string
+     */
+    public function getCinemaTimezone()
+    {
+        return $this->cinemaTimezone;
+    }
+
+    /**
+     * Generated from protobuf field <code>string cinemaTimezone = 22;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCinemaTimezone($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->cinemaTimezone = $var;
 
         return $this;
     }
