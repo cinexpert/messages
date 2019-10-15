@@ -94,9 +94,21 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      */
     private $cinemaNumber = '';
     /**
-     * Generated from protobuf field <code>string roomNumber = 24;</code>
+     * Generated from protobuf field <code>int32 roomNumber = 24;</code>
      */
-    private $roomNumber = '';
+    private $roomNumber = 0;
+    /**
+     * Generated from protobuf field <code>int32 numberOfSeats = 25;</code>
+     */
+    private $numberOfSeats = 0;
+    /**
+     * Generated from protobuf field <code>bool roomSupports3D = 26;</code>
+     */
+    private $roomSupports3D = false;
+    /**
+     * Generated from protobuf field <code>bool roomSupports35mm = 27;</code>
+     */
+    private $roomSupports35mm = false;
 
     /**
      * Constructor.
@@ -124,7 +136,10 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type string $cinemaStreetNumber
      *     @type string $cinemaTimezone
      *     @type string $cinemaNumber
-     *     @type string $roomNumber
+     *     @type int $roomNumber
+     *     @type int $numberOfSeats
+     *     @type bool $roomSupports3D
+     *     @type bool $roomSupports35mm
      * }
      */
     public function __construct($data = NULL) {
@@ -573,8 +588,8 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string roomNumber = 24;</code>
-     * @return string
+     * Generated from protobuf field <code>int32 roomNumber = 24;</code>
+     * @return int
      */
     public function getRoomNumber()
     {
@@ -582,14 +597,80 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string roomNumber = 24;</code>
-     * @param string $var
+     * Generated from protobuf field <code>int32 roomNumber = 24;</code>
+     * @param int $var
      * @return $this
      */
     public function setRoomNumber($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkInt32($var);
         $this->roomNumber = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 numberOfSeats = 25;</code>
+     * @return int
+     */
+    public function getNumberOfSeats()
+    {
+        return $this->numberOfSeats;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 numberOfSeats = 25;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setNumberOfSeats($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->numberOfSeats = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool roomSupports3D = 26;</code>
+     * @return bool
+     */
+    public function getRoomSupports3D()
+    {
+        return $this->roomSupports3D;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool roomSupports3D = 26;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setRoomSupports3D($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->roomSupports3D = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool roomSupports35mm = 27;</code>
+     * @return bool
+     */
+    public function getRoomSupports35Mm()
+    {
+        return $this->roomSupports35mm;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool roomSupports35mm = 27;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setRoomSupports35Mm($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->roomSupports35mm = $var;
 
         return $this;
     }

@@ -39,5 +39,8 @@ message ResourceUpdateRequest {
     string cinemaStreetNumber    = 21;
     string cinemaTimezone        = 22;
     string cinemaNumber          = 23;
-    string roomNumber            = 24;
+    int32 roomNumber             = 24;
+    int32 numberOfSeats          = 25;
+    bool roomSupports3D          = 26;
+    bool roomSupports35mm        = 27;
 }
