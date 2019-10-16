@@ -90,9 +90,9 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      */
     private $cinemaTimezone = '';
     /**
-     * Generated from protobuf field <code>string cinemaNumber = 23;</code>
+     * Generated from protobuf field <code>int32 cinemaNumber = 23;</code>
      */
-    private $cinemaNumber = '';
+    private $cinemaNumber = 0;
     /**
      * Generated from protobuf field <code>int32 roomNumber = 24;</code>
      */
@@ -135,7 +135,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type string $cinemaStreetLine2
      *     @type string $cinemaStreetNumber
      *     @type string $cinemaTimezone
-     *     @type string $cinemaNumber
+     *     @type int $cinemaNumber
      *     @type int $roomNumber
      *     @type int $numberOfSeats
      *     @type bool $roomSupports3D
@@ -566,8 +566,8 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cinemaNumber = 23;</code>
-     * @return string
+     * Generated from protobuf field <code>int32 cinemaNumber = 23;</code>
+     * @return int
      */
     public function getCinemaNumber()
     {
@@ -575,13 +575,13 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string cinemaNumber = 23;</code>
-     * @param string $var
+     * Generated from protobuf field <code>int32 cinemaNumber = 23;</code>
+     * @param int $var
      * @return $this
      */
     public function setCinemaNumber($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkInt32($var);
         $this->cinemaNumber = $var;
 
         return $this;
