@@ -121,6 +121,10 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool cinemaEquipmentMonitoringEnabled = 30;</code>
      */
     private $cinemaEquipmentMonitoringEnabled = false;
+    /**
+     * Generated from protobuf field <code>bool cinemaContentMonitoringEnabled = 31;</code>
+     */
+    private $cinemaContentMonitoringEnabled = false;
 
     /**
      * Constructor.
@@ -155,6 +159,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type float $cinemaLongitude
      *     @type float $cinemaLatitude
      *     @type bool $cinemaEquipmentMonitoringEnabled
+     *     @type bool $cinemaContentMonitoringEnabled
      * }
      */
     public function __construct($data = NULL) {
@@ -752,6 +757,28 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->cinemaEquipmentMonitoringEnabled = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool cinemaContentMonitoringEnabled = 31;</code>
+     * @return bool
+     */
+    public function getCinemaContentMonitoringEnabled()
+    {
+        return $this->cinemaContentMonitoringEnabled;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool cinemaContentMonitoringEnabled = 31;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setCinemaContentMonitoringEnabled($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->cinemaContentMonitoringEnabled = $var;
 
         return $this;
     }

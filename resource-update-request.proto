@@ -46,4 +46,5 @@ message ResourceUpdateRequest {
     float cinemaLongitude                 = 28;
     float cinemaLatitude                  = 29;
     bool cinemaEquipmentMonitoringEnabled = 30;
+    bool cinemaContentMonitoringEnabled   = 31;
 }
