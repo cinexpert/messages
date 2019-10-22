@@ -109,6 +109,18 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool roomSupports35mm = 27;</code>
      */
     private $roomSupports35mm = false;
+    /**
+     * Generated from protobuf field <code>float cinemaLongitude = 28;</code>
+     */
+    private $cinemaLongitude = 0.0;
+    /**
+     * Generated from protobuf field <code>float cinemaLatitude = 29;</code>
+     */
+    private $cinemaLatitude = 0.0;
+    /**
+     * Generated from protobuf field <code>bool cinemaEquipmentMonitoringEnabled = 30;</code>
+     */
+    private $cinemaEquipmentMonitoringEnabled = false;
 
     /**
      * Constructor.
@@ -140,6 +152,9 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type int $numberOfSeats
      *     @type bool $roomSupports3D
      *     @type bool $roomSupports35mm
+     *     @type float $cinemaLongitude
+     *     @type float $cinemaLatitude
+     *     @type bool $cinemaEquipmentMonitoringEnabled
      * }
      */
     public function __construct($data = NULL) {
@@ -671,6 +686,72 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->roomSupports35mm = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>float cinemaLongitude = 28;</code>
+     * @return float
+     */
+    public function getCinemaLongitude()
+    {
+        return $this->cinemaLongitude;
+    }
+
+    /**
+     * Generated from protobuf field <code>float cinemaLongitude = 28;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setCinemaLongitude($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->cinemaLongitude = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>float cinemaLatitude = 29;</code>
+     * @return float
+     */
+    public function getCinemaLatitude()
+    {
+        return $this->cinemaLatitude;
+    }
+
+    /**
+     * Generated from protobuf field <code>float cinemaLatitude = 29;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setCinemaLatitude($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->cinemaLatitude = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool cinemaEquipmentMonitoringEnabled = 30;</code>
+     * @return bool
+     */
+    public function getCinemaEquipmentMonitoringEnabled()
+    {
+        return $this->cinemaEquipmentMonitoringEnabled;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool cinemaEquipmentMonitoringEnabled = 30;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setCinemaEquipmentMonitoringEnabled($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->cinemaEquipmentMonitoringEnabled = $var;
 
         return $this;
     }
