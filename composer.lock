@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03635f1005b1e9bee21837f2bd5ee872",
+    "content-hash": "e56a1a24bc3727508801fa8d90537add",
     "packages": [
         {
             "name": "google/protobuf",
-            "version": "v3.8.0",
+            "version": "v3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/protocolbuffers/protobuf-php.git",
-                "reference": "a257235dc1a0d45f8cfc641d0c2ad852f57396c4"
+                "reference": "5dffdd2c84112e6c91fd84f92e3df96649426881"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/a257235dc1a0d45f8cfc641d0c2ad852f57396c4",
-                "reference": "a257235dc1a0d45f8cfc641d0c2ad852f57396c4",
+                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/5dffdd2c84112e6c91fd84f92e3df96649426881",
+                "reference": "5dffdd2c84112e6c91fd84f92e3df96649426881",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
             "keywords": [
                 "proto"
             ],
-            "time": "2019-05-29T00:06:29+00:00"
+            "time": "2019-10-03T20:08:37+00:00"
         }
     ],
     "packages-dev": [],

@@ -125,6 +125,10 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool cinemaContentMonitoringEnabled = 31;</code>
      */
     private $cinemaContentMonitoringEnabled = false;
+    /**
+     * Generated from protobuf field <code>string copyEquipmentModelFromPlayer = 32;</code>
+     */
+    private $copyEquipmentModelFromPlayer = '';
 
     /**
      * Constructor.
@@ -160,6 +164,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type float $cinemaLatitude
      *     @type bool $cinemaEquipmentMonitoringEnabled
      *     @type bool $cinemaContentMonitoringEnabled
+     *     @type string $copyEquipmentModelFromPlayer
      * }
      */
     public function __construct($data = NULL) {
@@ -779,6 +784,28 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->cinemaContentMonitoringEnabled = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string copyEquipmentModelFromPlayer = 32;</code>
+     * @return string
+     */
+    public function getCopyEquipmentModelFromPlayer()
+    {
+        return $this->copyEquipmentModelFromPlayer;
+    }
+
+    /**
+     * Generated from protobuf field <code>string copyEquipmentModelFromPlayer = 32;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCopyEquipmentModelFromPlayer($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->copyEquipmentModelFromPlayer = $var;
 
         return $this;
     }

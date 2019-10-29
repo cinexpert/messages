@@ -47,4 +47,5 @@ message ResourceUpdateRequest {
     float cinemaLatitude                  = 29;
     bool cinemaEquipmentMonitoringEnabled = 30;
     bool cinemaContentMonitoringEnabled   = 31;
+    string copyEquipmentModelFromPlayer   = 32;
 }
