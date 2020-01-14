@@ -137,6 +137,10 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string equipmentModelVendorId = 34;</code>
      */
     private $equipmentModelVendorId = '';
+    /**
+     * Generated from protobuf field <code>string manufacturerPartNumber = 35;</code>
+     */
+    private $manufacturerPartNumber = '';
 
     /**
      * Constructor.
@@ -175,6 +179,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type string $copyEquipmentModelFromPlayer
      *     @type string $equipmentModelType
      *     @type string $equipmentModelVendorId
+     *     @type string $manufacturerPartNumber
      * }
      */
     public function __construct($data = NULL) {
@@ -860,6 +865,28 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->equipmentModelVendorId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string manufacturerPartNumber = 35;</code>
+     * @return string
+     */
+    public function getManufacturerPartNumber()
+    {
+        return $this->manufacturerPartNumber;
+    }
+
+    /**
+     * Generated from protobuf field <code>string manufacturerPartNumber = 35;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setManufacturerPartNumber($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->manufacturerPartNumber = $var;
 
         return $this;
     }
