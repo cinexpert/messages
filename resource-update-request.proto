@@ -50,4 +50,5 @@ message ResourceUpdateRequest {
     string copyEquipmentModelFromPlayer   = 32;
     string equipmentModelType             = 33;
     string equipmentModelVendorId         = 34;
+    string manufacturerPartNumber         = 35;
 }
