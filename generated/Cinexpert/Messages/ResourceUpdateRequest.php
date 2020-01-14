@@ -133,6 +133,10 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string equipmentModelType = 33;</code>
      */
     private $equipmentModelType = '';
+    /**
+     * Generated from protobuf field <code>string equipmentModelVendorId = 34;</code>
+     */
+    private $equipmentModelVendorId = '';
 
     /**
      * Constructor.
@@ -170,6 +174,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type bool $cinemaContentMonitoringEnabled
      *     @type string $copyEquipmentModelFromPlayer
      *     @type string $equipmentModelType
+     *     @type string $equipmentModelVendorId
      * }
      */
     public function __construct($data = NULL) {
@@ -833,6 +838,28 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->equipmentModelType = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentModelVendorId = 34;</code>
+     * @return string
+     */
+    public function getEquipmentModelVendorId()
+    {
+        return $this->equipmentModelVendorId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentModelVendorId = 34;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEquipmentModelVendorId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->equipmentModelVendorId = $var;
 
         return $this;
     }
