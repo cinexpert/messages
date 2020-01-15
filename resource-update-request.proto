@@ -51,4 +51,5 @@ message ResourceUpdateRequest {
     string equipmentModelType             = 33;
     string equipmentModelVendorId         = 34;
     string manufacturerPartNumber         = 35;
+    string manufacturer                   = 36;
 }
