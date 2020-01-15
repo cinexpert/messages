@@ -49,6 +49,7 @@ message ResourceUpdateRequest {
     bool cinemaContentMonitoringEnabled   = 31;
     string copyEquipmentModelFromPlayer   = 32;
     string equipmentModelType             = 33;
-    string equipmentModelVendorId         = 34;
-    string manufacturerPartNumber         = 35;
+    string contentEquipmentApi            = 34;
+    string equipmentModelVendorId         = 35;
+    string manufacturerPartNumber         = 36;
 }

@@ -134,11 +134,15 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      */
     private $equipmentModelType = '';
     /**
-     * Generated from protobuf field <code>string equipmentModelVendorId = 34;</code>
+     * Generated from protobuf field <code>string contentEquipmentApi = 34;</code>
+     */
+    private $contentEquipmentApi = '';
+    /**
+     * Generated from protobuf field <code>string equipmentModelVendorId = 35;</code>
      */
     private $equipmentModelVendorId = '';
     /**
-     * Generated from protobuf field <code>string manufacturerPartNumber = 35;</code>
+     * Generated from protobuf field <code>string manufacturerPartNumber = 36;</code>
      */
     private $manufacturerPartNumber = '';
 
@@ -178,6 +182,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type bool $cinemaContentMonitoringEnabled
      *     @type string $copyEquipmentModelFromPlayer
      *     @type string $equipmentModelType
+     *     @type string $contentEquipmentApi
      *     @type string $equipmentModelVendorId
      *     @type string $manufacturerPartNumber
      * }
@@ -848,7 +853,29 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string equipmentModelVendorId = 34;</code>
+     * Generated from protobuf field <code>string contentEquipmentApi = 34;</code>
+     * @return string
+     */
+    public function getContentEquipmentApi()
+    {
+        return $this->contentEquipmentApi;
+    }
+
+    /**
+     * Generated from protobuf field <code>string contentEquipmentApi = 34;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setContentEquipmentApi($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->contentEquipmentApi = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentModelVendorId = 35;</code>
      * @return string
      */
     public function getEquipmentModelVendorId()
@@ -857,7 +884,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string equipmentModelVendorId = 34;</code>
+     * Generated from protobuf field <code>string equipmentModelVendorId = 35;</code>
      * @param string $var
      * @return $this
      */
@@ -870,7 +897,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string manufacturerPartNumber = 35;</code>
+     * Generated from protobuf field <code>string manufacturerPartNumber = 36;</code>
      * @return string
      */
     public function getManufacturerPartNumber()
@@ -879,7 +906,7 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string manufacturerPartNumber = 35;</code>
+     * Generated from protobuf field <code>string manufacturerPartNumber = 36;</code>
      * @param string $var
      * @return $this
      */
