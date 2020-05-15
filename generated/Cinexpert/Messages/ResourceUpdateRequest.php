@@ -129,6 +129,22 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string copyEquipmentModelFromPlayer = 32;</code>
      */
     private $copyEquipmentModelFromPlayer = '';
+    /**
+     * Generated from protobuf field <code>string equipmentModelType = 33;</code>
+     */
+    private $equipmentModelType = '';
+    /**
+     * Generated from protobuf field <code>string contentEquipmentApi = 34;</code>
+     */
+    private $contentEquipmentApi = '';
+    /**
+     * Generated from protobuf field <code>string equipmentModelVendorId = 35;</code>
+     */
+    private $equipmentModelVendorId = '';
+    /**
+     * Generated from protobuf field <code>string manufacturerPartNumber = 36;</code>
+     */
+    private $manufacturerPartNumber = '';
 
     /**
      * Constructor.
@@ -165,6 +181,10 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type bool $cinemaEquipmentMonitoringEnabled
      *     @type bool $cinemaContentMonitoringEnabled
      *     @type string $copyEquipmentModelFromPlayer
+     *     @type string $equipmentModelType
+     *     @type string $contentEquipmentApi
+     *     @type string $equipmentModelVendorId
+     *     @type string $manufacturerPartNumber
      * }
      */
     public function __construct($data = NULL) {
@@ -806,6 +826,94 @@ class ResourceUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->copyEquipmentModelFromPlayer = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentModelType = 33;</code>
+     * @return string
+     */
+    public function getEquipmentModelType()
+    {
+        return $this->equipmentModelType;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentModelType = 33;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEquipmentModelType($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->equipmentModelType = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string contentEquipmentApi = 34;</code>
+     * @return string
+     */
+    public function getContentEquipmentApi()
+    {
+        return $this->contentEquipmentApi;
+    }
+
+    /**
+     * Generated from protobuf field <code>string contentEquipmentApi = 34;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setContentEquipmentApi($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->contentEquipmentApi = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentModelVendorId = 35;</code>
+     * @return string
+     */
+    public function getEquipmentModelVendorId()
+    {
+        return $this->equipmentModelVendorId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string equipmentModelVendorId = 35;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEquipmentModelVendorId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->equipmentModelVendorId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string manufacturerPartNumber = 36;</code>
+     * @return string
+     */
+    public function getManufacturerPartNumber()
+    {
+        return $this->manufacturerPartNumber;
+    }
+
+    /**
+     * Generated from protobuf field <code>string manufacturerPartNumber = 36;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setManufacturerPartNumber($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->manufacturerPartNumber = $var;
 
         return $this;
     }
