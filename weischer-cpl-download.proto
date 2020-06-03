@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package Cinexpert.Messages;
-
-message WeischerCplDownloadRequest {
-    string cplId          = 1;
-    string cplDownloadUrl = 2;
-}

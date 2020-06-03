@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Cinexpert.Messages;
+
+message WeischerCplTransferRequest {
+    enum RequestType {
+        NOT_SET  = 0;
+        DOWNLOAD = 1;
+        DELETE   = 2;
+    }
+
+    RequestType requestType = 1;
+    string cplId            = 2;
+    string cplDownloadUrl   = 3;
+}
