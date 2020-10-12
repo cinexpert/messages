@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Cinexpert.Messages;
+
+message TmsToPlayerUpdateRequest {
+    enum RequestType {
+        UNDEFINED     = 0;
+        SPL_PUSH      = 1;
+        SCHEDULE_PUSH = 2;
+    }
+
+    RequestType type = 1;
+    string splId     = 2;
+    string playerId  = 3;
+    string roomId    = 4;
+}
