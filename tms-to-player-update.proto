@@ -9,8 +9,9 @@ message TmsToPlayerUpdateRequest {
         SCHEDULE_PUSH = 2;
     }
 
-    RequestType type = 1;
-    string splId     = 2;
-    string playerId  = 3;
-    string roomId    = 4;
+    RequestType type  = 1;
+    string splId      = 2;
+    string playerId   = 3;
+    string roomId     = 4;
+    string scheduleId = 5;
 }

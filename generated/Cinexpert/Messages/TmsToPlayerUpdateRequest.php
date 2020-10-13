@@ -29,6 +29,10 @@ class TmsToPlayerUpdateRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string roomId = 4;</code>
      */
     private $roomId = '';
+    /**
+     * Generated from protobuf field <code>string scheduleId = 5;</code>
+     */
+    private $scheduleId = '';
 
     /**
      * Constructor.
@@ -40,6 +44,7 @@ class TmsToPlayerUpdateRequest extends \Google\Protobuf\Internal\Message
      *     @type string $splId
      *     @type string $playerId
      *     @type string $roomId
+     *     @type string $scheduleId
      * }
      */
     public function __construct($data = NULL) {
@@ -131,6 +136,28 @@ class TmsToPlayerUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->roomId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string scheduleId = 5;</code>
+     * @return string
+     */
+    public function getScheduleId()
+    {
+        return $this->scheduleId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string scheduleId = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setScheduleId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->scheduleId = $var;
 
         return $this;
     }
