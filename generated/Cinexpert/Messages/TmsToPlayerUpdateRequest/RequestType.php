@@ -23,11 +23,21 @@ class RequestType
      * Generated from protobuf enum <code>SCHEDULE_PUSH = 2;</code>
      */
     const SCHEDULE_PUSH = 2;
+    /**
+     * Generated from protobuf enum <code>SPL_DELETION = 3;</code>
+     */
+    const SPL_DELETION = 3;
+    /**
+     * Generated from protobuf enum <code>SCHEDULE_DELETION = 4;</code>
+     */
+    const SCHEDULE_DELETION = 4;
 
     private static $valueToName = [
         self::UNDEFINED => 'UNDEFINED',
         self::SPL_PUSH => 'SPL_PUSH',
         self::SCHEDULE_PUSH => 'SCHEDULE_PUSH',
+        self::SPL_DELETION => 'SPL_DELETION',
+        self::SCHEDULE_DELETION => 'SCHEDULE_DELETION',
     ];
 
     public static function name($value)

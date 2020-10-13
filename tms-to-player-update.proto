@@ -4,9 +4,11 @@ package Cinexpert.Messages;
 
 message TmsToPlayerUpdateRequest {
     enum RequestType {
-        UNDEFINED     = 0;
-        SPL_PUSH      = 1;
-        SCHEDULE_PUSH = 2;
+        UNDEFINED         = 0;
+        SPL_PUSH          = 1;
+        SCHEDULE_PUSH     = 2;
+        SPL_DELETION      = 3;
+        SCHEDULE_DELETION = 4;
     }
 
     RequestType type  = 1;
