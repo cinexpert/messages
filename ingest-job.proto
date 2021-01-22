@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package Cinexpert.Messages;
+
+message IngestJob {
+    string ingestJobId = 1;
+}
