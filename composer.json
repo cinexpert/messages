@@ -2,7 +2,7 @@
   "name": "cinexpert/messages",
   "type": "library",
   "require": {
-    "php": "^7.1",
+    "php": ">= 7.1",
     "google/protobuf": "^3.8"
   },
   "autoload": {
