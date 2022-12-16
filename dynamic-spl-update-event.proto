@@ -20,22 +20,22 @@ message DynamicSplUpdateEvent {
         SPL_PACK_INSTANCE_DRAFT_DELETION = 13;
     }
 
-    EventType eventType           = 1;
-    string posScheduleId          = 2;
-    string posScheduleStartTime   = 3;
-    string posMovieId             = 4;
-    string posMovieTitle          = 5;
-    string cplId                  = 6;
-    string cplTitle               = 7;
-    string cplDuration            = 8;
-    string cplEditRate            = 9;
-    string cplRuleId              = 10;
-    string cinemaId               = 11;
-    string roomId                 = 12;
-    string splPackInstanceDraftId = 13;
-    string splId                  = 14;
-    string audioFormat            = 15;
-    string videoFormat            = 16;
-    string videoDimension         = 17;
-    string videoResolution        = 18;
+    EventType eventType            = 1;
+    string posScheduleId           = 2;
+    string posScheduleStartTime    = 3;
+    string posMovieId              = 4;
+    string posMovieTitle           = 5;
+    string cplId                   = 6;
+    string cplTitle                = 7;
+    string cplDuration             = 8;
+    string cplEditRate             = 9;
+    string cplRuleId               = 10;
+    string cinemaId                = 11;
+    string roomId                  = 12;
+    string splPackInstanceDraftId  = 13;
+    string splId                   = 14;
+    string posMovieAudioFormat     = 15;
+    string posMovieVideoFormat     = 16;
+    string posMovieVideoDimension  = 17;
+    string posMovieVideoResolution = 18;
 }
