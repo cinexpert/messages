@@ -69,6 +69,22 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string splId = 14;</code>
      */
     private $splId = '';
+    /**
+     * Generated from protobuf field <code>string audioFormat = 15;</code>
+     */
+    private $audioFormat = '';
+    /**
+     * Generated from protobuf field <code>string videoFormat = 16;</code>
+     */
+    private $videoFormat = '';
+    /**
+     * Generated from protobuf field <code>string videoDimension = 17;</code>
+     */
+    private $videoDimension = '';
+    /**
+     * Generated from protobuf field <code>string videoResolution = 18;</code>
+     */
+    private $videoResolution = '';
 
     /**
      * Constructor.
@@ -90,6 +106,10 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
      *     @type string $roomId
      *     @type string $splPackInstanceDraftId
      *     @type string $splId
+     *     @type string $audioFormat
+     *     @type string $videoFormat
+     *     @type string $videoDimension
+     *     @type string $videoResolution
      * }
      */
     public function __construct($data = NULL) {
@@ -401,6 +421,94 @@ class DynamicSplUpdateEvent extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->splId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string audioFormat = 15;</code>
+     * @return string
+     */
+    public function getAudioFormat()
+    {
+        return $this->audioFormat;
+    }
+
+    /**
+     * Generated from protobuf field <code>string audioFormat = 15;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAudioFormat($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->audioFormat = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string videoFormat = 16;</code>
+     * @return string
+     */
+    public function getVideoFormat()
+    {
+        return $this->videoFormat;
+    }
+
+    /**
+     * Generated from protobuf field <code>string videoFormat = 16;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setVideoFormat($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->videoFormat = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string videoDimension = 17;</code>
+     * @return string
+     */
+    public function getVideoDimension()
+    {
+        return $this->videoDimension;
+    }
+
+    /**
+     * Generated from protobuf field <code>string videoDimension = 17;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setVideoDimension($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->videoDimension = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string videoResolution = 18;</code>
+     * @return string
+     */
+    public function getVideoResolution()
+    {
+        return $this->videoResolution;
+    }
+
+    /**
+     * Generated from protobuf field <code>string videoResolution = 18;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setVideoResolution($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->videoResolution = $var;
 
         return $this;
     }

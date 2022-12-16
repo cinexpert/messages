@@ -34,4 +34,8 @@ message DynamicSplUpdateEvent {
     string roomId                 = 12;
     string splPackInstanceDraftId = 13;
     string splId                  = 14;
+    string audioFormat            = 15;
+    string videoFormat            = 16;
+    string videoDimension         = 17;
+    string videoResolution        = 18;
 }
