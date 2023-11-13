@@ -11,4 +11,5 @@ Contains Google protocol buffer messages used across multiple projects.
 ./protoc --php_out=generated weischer-cpl-transfer.proto
 ./protoc --php_out=generated tms-to-player-update.proto
 ./protoc --php_out=generated ingest-job.proto
+./protoc --php_out=generated cine-accord-cpl-received.proto
 ```
